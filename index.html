@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./IMG/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <!-- <section class="container"> -->
+        <div class="layout">
+          <div class="left">
+            <div class="left-content">
+              <h3 class="tittle">Stay updated!</h3>
+
+              <p class="manager">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p>
+              <div class="updates">
+                <div class="icon-list">
+                  <img src="./IMG/icon-list.svg" alt="" />
+                  <p>Product discovery and building what matters</p>
+                </div>
+                <div class="icon-list">
+                  <img src="./IMG/icon-list.svg" alt="" />
+                  <p>Measuring to make sure updates are a success</p>
+                </div>
+                <div class="icon-list">
+                  <img src="./IMG/icon-list.svg" alt="" />
+                  <p>And much more!</p>
+                </div>
+                <form class="form-wrapper" id="form">
+                  <div class="inputs">
+                    <label for="email address">Email Address</label>
+                    <input type="text" placeholder="email@company.com"  id="email"  onkeyup= validateEmail() />
+                    <span id="text"></span>
+                    <span id="alart"></span>
+                  </div>
+                  <div class="btn-wrapper">
+                    <button class="btn-create" id="subscribe-btn" >
+                      <a href="./successPage.html"
+                        >Subsribe to monthly newsletter</a
+                      >
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              src="./IMG/illustration-sign-up-desktop.svg"
+              alt=""
+              width="100%"
+            />
+          </div>
+        </div>
+      <!-- </section> -->
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
