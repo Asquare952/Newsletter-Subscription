@@ -6,10 +6,11 @@
     <title>Document</title>
     <link rel="icon" href="./IMG/favicon-32x32.png" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/success.css" />
   </head>
   <body>
     <main class="main-container">
-      <!-- <section class="container"> -->
+      <section class="first_contianer" id="first_contianer">
         <div class="layout">
           <div class="left">
             <div class="left-content">
@@ -34,15 +35,17 @@
                 <form class="form-wrapper" id="form">
                   <div class="inputs">
                     <label for="email address">Email Address</label>
-                    <input type="text" placeholder="email@company.com"  id="email"  onkeyup= validateEmail() />
+                    <input
+                      type="text"
+                      placeholder="email@company.com"
+                      id="email"
+                    />
                     <span id="text"></span>
                     <span id="alart"></span>
                   </div>
                   <div class="btn-wrapper">
-                    <button class="btn-create" id="subscribe-btn" >
-                      <a href="./successPage.html"
-                        >Subsribe to monthly newsletter</a
-                      >
+                    <button class="btn-create" id="subscribe-btn">
+                      Subsribe to monthly newsletter
                     </button>
                   </div>
                 </form>
@@ -50,16 +53,31 @@
             </div>
           </div>
           <div class="right">
-            <img
-              src="./IMG/illustration-sign-up-desktop.svg"
-              alt=""
-              width="100%"
-            />
+            <img src="./IMG/illustration-sign-up-desktop.svg" alt="" />
           </div>
         </div>
-      <!-- </section> -->
+      </section>
+
+      <section class="second_container" id="second_container">
+        <div class="layout">
+          <div class="content">
+            <img src="./IMG/icon-success.svg" alt="" class="successImg" />
+            <h3 class="tittle">Thanks for subscribing!</h3>
+            <p class="article">
+              A confirmation email as been sent to
+              <strong class="st" id="inputedEmail"></strong> Please open it and
+              click the button inside to confirm your subscription.
+            </p>
+            <div class="btn-wrapper">
+              <button class="btn-dismiss" id="btn-dismiss">
+                Dismiss message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script src="./main.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
